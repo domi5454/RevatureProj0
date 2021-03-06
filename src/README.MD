@@ -3,5 +3,5 @@ Domingo Rodriguez
 Revature Project 0
 Language: Java 8,
 Project Goal:  Working models.Car models.DealershipSingleton enterprise system
-Frameworks:  Tried Maven.  
+Frameworks:    
 Libraries:
