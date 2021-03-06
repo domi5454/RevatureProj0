@@ -1,9 +1,10 @@
 package com.domRod.Dealership.java.models;
+import java.util.UUID;
 
 public class Employee {
 //TODO:How do I generate employee ID num?
     private final User.userType status = User.userType.EMPLOYEE;
-    private int employeeID = 0;
+    private UUID employeeID = null;
     private String firstName = " ";
     private String lastName = " ";
     private String userName = "";
@@ -19,18 +20,19 @@ public class Employee {
     public Employee(String first, String last){
         this.firstName = first;
         this.lastName = last;
+        this.employeeID = createEmployeeID();
     }
 
     public User.userType getStatus() {
         return status;
     }
 
-    public int getEmployeeID() {
+    public UUID getEmployeeID() {
         return employeeID;
     }
 
-    public void setEmployeeID(int employeeID) {
-        this.employeeID = employeeID;
+    public UUID createEmployeeID() {
+            return UUID.randomUUID();
     }
 
     public String getFirstName() {
