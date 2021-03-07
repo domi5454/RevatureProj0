@@ -11,8 +11,8 @@ public class CustomerMenu extends AMenu {
         System.out.println(greet2);
         Scanner myScanner2 = new Scanner(System.in);
         System.out.println("Welcome valued customer\n");
-        System.out.printf("Would you like to %n(1):\tRegister as a new Customer or%n(2):\tLogin as a returning customer?:");
-        System.out.println("Please enter the Option number of your choice:  (1) or (2)");
+        System.out.printf("Would you like to %n(1):\tRegister as a new Customer or\n(2):\tLogin as a returning customer?:");
+        System.out.println("\n\n\t\tPlease enter the Option number of your choice:  (1) or (2)");
 
         try {
 
@@ -20,6 +20,7 @@ public class CustomerMenu extends AMenu {
             if (entry.equals("1")){
                 System.out.println("Welcome New Customer!\r");
                 System.out.println("Let's get you started....\r");
+                createNewCustomer();
 
 
             } else if (entry.equals("2")){
@@ -37,7 +38,11 @@ public class CustomerMenu extends AMenu {
     }
 
 
-public static void createNewCustomer(){}
+public static void createNewCustomer(){
+        do {
+
+        }while()
+}
 
 public void customerSRVCS(){}
 }
