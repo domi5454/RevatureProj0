@@ -24,8 +24,9 @@ public class PaymentSrvcs {
        return invoice;
     }
 
-    public CarPayment[]  viewCustomerPaymts(Customer customer, Car[] car){
-        CarPayment[] invoices = new CarPayment[];
-
+    public CarPayment[]  viewCustomerPaymts(Customer customer, Car[] cars){
+        CarPayment[] invoices = new CarPayment[cars.length];
+        for (Car car:cars){}
+        return invoices;
     }
 }

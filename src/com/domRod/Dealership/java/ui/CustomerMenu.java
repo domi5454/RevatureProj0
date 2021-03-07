@@ -1,5 +1,6 @@
 package com.domRod.Dealership.java.ui;
-
+import com.domRod.Dealership.java.models.Customer;
+import com.domRod.Dealership.java.services.CustSrvcs;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -39,9 +40,14 @@ public class CustomerMenu extends AMenu {
 
 
 public static void createNewCustomer(){
-        do {
+        Scanner custScan = new Scanner(System.in);
+        try {
+            System.out.println("First Name:  ");
+            String entry = custScan.nextLine();
 
-        }while()
+
+            Customer newCustomer1 = new Customer();
+        }catch
 }
 
 public void customerSRVCS(){}

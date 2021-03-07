@@ -14,12 +14,9 @@ public class Customer extends User {
     private String state = " ";
     private String username = " ";
     private String userPassword = " ";
+    private String email = " ";
 
-    private enum CustomerType{
-        NEW_CUSTOMER,
-        RETURNING_CUSTOMER,
-        VIP;
-    }
+
 
 Customer(){ }
 
