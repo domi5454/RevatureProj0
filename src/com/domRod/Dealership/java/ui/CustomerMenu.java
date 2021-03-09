@@ -21,7 +21,7 @@ public class CustomerMenu extends AMenu {
             if (entry.equals("1")){
                 System.out.println("Welcome New Customer!\r");
                 System.out.println("Let's get you started....\r");
-                createNewCustomer();
+                Customer newCustomer1 = createNewCustomer();
 
 
             } else if (entry.equals("2")){
@@ -39,15 +39,15 @@ public class CustomerMenu extends AMenu {
     }
 
 
-public static void createNewCustomer(){
+public static Customer createNewCustomer(){
         Scanner custScan = new Scanner(System.in);
-        try {
+
             System.out.println("First Name:  ");
             String entry = custScan.nextLine();
+            System.out.println("Last Name:  ");
+            String entry2 = custScan.nextLine();
+            return new Customer(entry,entry2);
 
-
-            Customer newCustomer1 = new Customer();
-        }catch
 }
 
 public void customerSRVCS(){}

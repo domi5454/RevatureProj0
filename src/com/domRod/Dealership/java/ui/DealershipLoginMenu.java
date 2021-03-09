@@ -1,5 +1,6 @@
 package com.domRod.Dealership.java.ui;
 
+import java.util.IllegalFormatException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 //
@@ -14,7 +15,7 @@ public class DealershipLoginMenu extends AMenu{
         System.out.println("\t\t\tLogin Menu.\nPlease enter the number for how you wish to login:");
         System.out.println("\t\t1:Customer");
         System.out.println("\t\t2:Employee");
-        System.out.printf("\tEntry:\t");
+        System.out.println("\tEntry:\t");
         try {
 
             String entry = myScanner.nextLine();
@@ -32,10 +33,13 @@ public class DealershipLoginMenu extends AMenu{
             }
 
 
-        } catch (InputMismatchException exception){
-        System.out.println("Please select either 1 or 2 from above");
+        } catch (InputMismatchException e){
+            System.out.println("Please select either 1 or 2 from above\n"+e);
 
-    }
+        } catch (IllegalArgumentException e){
+            System.out.println("Please only enter a number 1 or 2 for above\n"+e);
+
+        } 
     myScanner.close();
 
     }

@@ -18,16 +18,16 @@ public class Customer extends User {
 
 
 
-Customer(){ }
+public Customer(){ }
 
-Customer( String first, String last){
+public Customer( String first, String last){
     //paramaterized constr.
     this.firstName = first;
     this.lastName = last;
     this.customerID = createCustNoID();
 }
 
-Customer(String first, String last, String username, String userPassword){
+public Customer(String first, String last, String username, String userPassword){
         this.firstName = first;
         this.lastName = last;
         this.username = username;
